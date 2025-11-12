@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+  .nav {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-link-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .about {
+    padding: 24px 0;
+  }
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-image {
+    justify-items: center;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    overflow-x: auto;
+  }
+
+  .feature-card {
+    padding: 24px 16px;
+    font-size: 12px;
+  }
+
+  .page-title,
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 32px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 24px;
+  }
+
+  .scroll-to-top {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .nav-link,
+  .nav-link-button {
+    text-align: center;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+
+  .page-title,
+  .section-title {
+    font-size: 2rem;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .feature-title,
+  .service-title {
+    font-size: 16px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
+  }
+}

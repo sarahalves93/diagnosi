@@ -1,0 +1,158 @@
+.alphabet-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.alphabet-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin-bottom: 0 auto 16px auto;
+  justify-content: center;
+}
+
+.letter-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(to bottom, var(--cor-2), var(--cor-p1));
+  color: #e0eff5;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.letter-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letter-btn.active {
+  background: linear-gradient(to bottom, #0066cc, #004a99);
+  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.4);
+}
+
+/* Exams Section */
+.exams-section {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.exams-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exams-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.exams-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exams-placeholder {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.exams-list {
+  display: none;
+}
+
+.exams-list.active {
+  display: block;
+}
+
+.exams-list-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.exams-list-title .letter {
+  color: #0066cc;
+}
+
+.exam-item {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f5f5f5;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .alphabet-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .letter-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .exams-content {
+    padding: 1.5rem;
+  }
+
+  .exams-list-title {
+    font-size: 1.2rem;
+  }
+
+  .exam-item {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alphabet-grid {
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .letter-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+
+  .exams-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .exams-title {
+    font-size: 1.5rem;
+  }
+}

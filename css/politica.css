@@ -1,0 +1,136 @@
+.privacy-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.privacy-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.privacy-update {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000c16;
+  margin-bottom: 24px;
+}
+
+.privacy-update strong {
+  color: #000c16;
+}
+
+.privacy-intro {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000c16;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.privacy-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--cor-3);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.privacy-section-content {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cor-3);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.privacy-section-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 16px 0;
+}
+
+.privacy-section-content li {
+  margin-left: 24px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.privacy-section-content li::before {
+  content: "•";
+  position: absolute;
+  left: -16px;
+  color: var(--cor-7);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .page-title::after {
+    display: none;
+  }
+
+  .privacy-section {
+    padding: 40px 0;
+  }
+
+  .privacy-content {
+    max-width: 100%;
+  }
+
+  .privacy-update {
+    font-size: 14px;
+  }
+
+  .privacy-intro {
+    font-size: 14px;
+  }
+
+  .privacy-section-title {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .privacy-section-content {
+    font-size: 14px;
+  }
+
+  .privacy-section-content li {
+    margin-left: 20px;
+  }
+
+  .privacy-section-content li::before {
+    left: -12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-section {
+    padding: 32px 0;
+  }
+
+  .privacy-update {
+    font-size: 13px;
+  }
+
+  .privacy-intro {
+    font-size: 13px;
+  }
+
+  .privacy-section-title {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .privacy-section-content {
+    font-size: 13px;
+  }
+
+  .privacy-section-content li {
+    margin-left: 18px;
+  }
+
+  .privacy-section-content li::before {
+    left: -10px;
+  }
+}
