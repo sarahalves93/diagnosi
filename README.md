@@ -88,7 +88,7 @@ O site é totalmente responsivo e se adapta para:
 
 ## 👨‍💻 Desenvolvido por
 
-Manus AI
+Sarah Alves
 
 ---
 
