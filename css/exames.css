@@ -112,13 +112,18 @@
 
 @media (max-width: 768px) {
   .alphabet-grid {
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(55px, auto));
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .letter-btn {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     font-size: 1.2rem;
   }
 
@@ -138,14 +143,23 @@
 
 @media (max-width: 480px) {
   .alphabet-grid {
-    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45px, auto));
+    justify-content: center;
+    gap: 0.6rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .letter-btn {
     width: 45px;
     height: 45px;
     font-size: 1rem;
+  }
+
+  .alphabet-section {
+    padding: 60px 0;
   }
 
   .exams-section {
